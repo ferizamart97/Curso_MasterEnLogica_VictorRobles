@@ -1,0 +1,9 @@
+/* DADO UN STRING Y UN NUMERO, REPETIR EL STRING TANTAS VECES COMO EL NUMERO INDIQUE
+
+EJEMPLOS
+repiteme("fer", 3);
+
+Devuelve
+ferferfer
+
+*/
