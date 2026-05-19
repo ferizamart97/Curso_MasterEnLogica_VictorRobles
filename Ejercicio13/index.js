@@ -19,3 +19,37 @@ DEVUELVE
 [[1,2,3,4], [5,6,7,8], [9,10]]
 
 */
+
+//CODIGO INICIAL
+function dividirArray(array, nElementos){
+
+    let conArray = [];
+    let arrayDiv = [];
+    let vueltas = array.length / nElementos;
+    let i = 0;
+
+
+    while(i < vueltas){
+        
+        
+        arrayDiv = array.splice(0, nElementos);
+
+        i++;
+        
+        conArray.push(arrayDiv); 
+    }
+    
+    return conArray; 
+
+}
+
+//CODIGO REFACTORIAZDO
+// function dividirArray(array, nElementos) {
+//   const resultado = [];
+//   for (let i = 0; i < array.length; i += nElementos) {
+//     resultado.push(array.slice(i, i + nElementos));
+//   }
+//   return resultado;
+// }
+
+console.log(dividirArray([1,2,3,4,5,6,7,8,9,10], 3))
